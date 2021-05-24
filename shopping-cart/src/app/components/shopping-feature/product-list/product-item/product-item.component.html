@@ -1,0 +1,38 @@
+<div class="card md-4 shadow-sm">
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group" >
+        <label for="from">Name</label>
+        <input type="string" id="from" class="form-control" [(ngModel)]="products.name" name="name" placeholder="Type product name" autocomplete="off">
+        </div>
+        <div class="form-group" >
+          <label for="from">Desciption</label>
+          <input type="string" id="from" class="form-control" name="description" [(ngModel)]="products.description" placeholder="Type product desciprion" autocomplete="off">
+        </div>
+        <div class="form-group" >
+          <label for="from">Price</label>
+          <input type="number" id="from" class="form-control" name="price" [(ngModel)]="products.price" placeholder="Type product price" autocomplete="off">
+        </div>
+        <div class="form-group" >
+          <label for="from">Image</label>
+          <input type="string" id="from" class="form-control" [(ngModel)]="products.imageUrl" name="imageUrl" placeholder="Type product image" autocomplete="off">
+        </div>
+        <input type="submit" value="Add Product" class="btn-primary">
+    </form>
+    <!--<img class="bd-placeholder-img card-img-top p-2" width="100%"
+    [src]="productItem.imageUrl" />
+      <div class="card mb-4 box-shadow">
+        <div class="card-body">
+            <p class="card-text">
+                <strong>{{ productItem.price | currency:'EUR'}}</strong>
+            </p>
+          <p class="card-text">{{ productItem.description }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline btn-primary">Add to cart</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">View details</button>
+            </div>
+          </div>
+        </div>--->
+</div>
+

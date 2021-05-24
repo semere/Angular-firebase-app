@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "webcommerce-3ee63": {
+      "hosting": {
+        "shopping-cart": [
+          "webcommerce-3ee63"
+        ]
+      }
+    }
+  }
+}

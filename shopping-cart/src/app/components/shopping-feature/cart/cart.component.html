@@ -1,0 +1,10 @@
+<div class="alert alert-info" *ngIf="cartItems.length === 0">Your Cart is Empty!</div>
+<div class="title" style="text-align: center; margin-bottom: 10px" >Cart</div>
+<ul class="list-group" style="margin-bottom: 5px; float:right" *ngIf="cartItems.length > 0">
+    <li class="list-group-item" style="margin-bottom: 10px" *ngFor="let item of cartItems">
+        <app-cart-item [cartItem]="item"></app-cart-item>
+    </li>
+    <li class="list-group-item active">
+        <strong>Total: {{ cartTotal | currency:'EUR'}}</strong>
+    </li>
+</ul>
